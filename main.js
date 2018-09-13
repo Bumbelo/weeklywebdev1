@@ -1,0 +1,52 @@
+$(document).ready(function(){
+    let valueHold;
+    let defaultHold;
+    $(".input").focus(function(){
+        valueHold=$(this).val();
+        defaultHold=$(this).attr("name");
+        if($(this).hasClass("nonDefault")){
+        }
+        else{
+            $(this).val("");
+        }
+    }).blur(function(){
+        if($(this).val()==""){
+            if($(this).hasClass("nonDefault")){
+                $(this).removeClass("nonDefault")
+                $(this).val(defaultHold); 
+            }
+            else{
+                $(this).val(valueHold);
+            }
+            
+        }
+        else{
+            $(this).addClass("nonDefault");
+        }
+    });
+    $(".message").focus(function(){
+        valueHold=$(this).text();
+        defaultHold=$(this).attr("name");
+        if($(this).hasClass("nonDefault")){
+            console.log("1");
+        }
+        else{
+            console.log("2");
+            $(this).val("");
+        }
+    }).blur(function(){
+        if($(this).val()==""){
+            if($(this).hasClass("nonDefault")){
+                $(this).removeClass("nonDefault")
+                $(this).val(defaultHold); 
+            }
+            else{
+                $(this).val(valueHold);
+            }
+ 
+        }
+        else{
+            $(this).addClass("nonDefault");
+        }
+    });
+});

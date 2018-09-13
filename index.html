@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masteralb Creative</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo1" src="logo1.png">
+    </header>
+    <main class="main">
+        <div class="formcontainer">
+            <h2 class="title">Register Form</h2>
+            <div class="wrapper" id="registerform">
+                <form  class="form">
+                    <div class="inputbox">
+                        <input class="input user" type="text" name="Username" value="Username">
+                    </div>
+                    <div class="inputbox">
+                        <input class="input lock" type="text" name="Password" value="Password">
+                    </div>
+                    <div class="inputbox">
+                        <input class="input lock" type="text" name="Confirm Password" value="Confirm Password">
+                    </div>
+                    <div class="inputbox">
+                        <input class="input envelope" type="text" name="Email" value="Email">
+                    </div>
+                    <div class="inputbox">
+                        <input class="input location" type="text" name="Your Location" value="Your Location">
+                    </div>
+                    <div class="checkboxcontainer">
+                        <input class="checkbox" type="checkbox">
+                        <span class="checkmark"></span>
+                        <label class="termsofuse">I have read and accept the terms of use</label>
+                    </div>
+                    <div class="buttoncontainer">
+                        <input class="submitbutton single" type="submit" value="Sign up">
+                    </div>    
+                </form>
+            </div>
+        </div>
+        <div class="formcontainer">
+            <h2 class="title">Send Email</h2>
+            <div class="wrapper" id="sendemailform">
+                <form  class="form">
+                    <div class="inputbox">
+                        <input class="input lock" type="text" name="Your Name" value="Your Name">
+                    </div>
+                    <div class="inputbox">
+                        <input class="input envelope" type="text" name="Your Email" value="Your Email">
+                    </div>
+                    <textarea class="message" name="Type your message ...">Type your message ...</textarea>
+                    <div class="checkboxcontainer">
+                        <input class="checkbox" type="checkbox">
+                        <label class="termsofuse">Send a copy to my Email</label>
+                    </div>
+                    <div class="buttoncontainer">
+                        <input class="submitbutton single" type="submit" value="Send Email">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="formcontainer">
+            <h2 class="title">Sign In Form</h2>
+            <div class="wrapper" id="signinform">
+                <form  class="form">
+                    <div class="inputbox">
+                        <input class="input user" type="text" name="Username" value="Username">
+                    </div>
+                    <div class="inputbox">
+                        <input class="input lock" type="text" name="Password" value="Password">
+                    </div>
+                    
+                    <div class="buttoncontainer">
+                        <div class="checkboxcontainer">
+                            <input class="checkbox" type="checkbox">
+                            <label class="termsofuse">Remember me</label>
+                        </div>
+                        <input class="submitbutton double" type="submit" value="Sign in">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="formcontainer">
+            <h2 class="title">Recover Form</h2>
+            <div class="wrapper" id="recoverform">
+                <form  class="form">
+                    <div class="inputbox">
+                        <input class="input envelope" type="text" name="Enter your Email" value="Enter your Email">
+                    </div>
+                    <div class="inputbox">
+                        <input class="input phone" type="text" name="Enter your Phone number" value="Enter your Phone number">
+                    </div>
+                    <div class="buttoncontainer">
+                        <input class="submitbutton double" type="submit" value="Send">
+                        <input class="submitbutton double" id="done" type="submit" value="Done">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="formcontainer">
+            <h2 class="title">Subscribe Form</h2>
+            <div class="wrapper" id="subscribeform" >
+                <form class="form">
+                    <div class="inputbox">
+                        <input class="input envelope" type="text" name="Enter your Email" value="Enter your Email">
+                    </div>
+                    <div class="buttoncontainer">
+                        <input class="submitbutton double accept" type="submit" value="Subscribe">
+                        <input class="submitbutton double" id="deny" type="submit" value="No, thanks">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="logocontainer">
+            <img class="logo2" src="logo2.png">
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size:16px;
+}
+
+body{
+    background-image:url(background.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+header{
+    text-align:center;
+    padding-top:3rem;
+}
+
+.logo1{
+    opacity:0.35;
+    max-width:429px;
+    min-width:250px;
+    width:50%;
+}
+
+main{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-align:start;
+        -ms-flex-align:start;
+            align-items:flex-start;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    height: 80rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-bottom:6rem;
+}
+
+.formcontainer{
+    width: 40%;
+    margin: 0 3rem;
+    max-width:500px;
+}
+
+.title{
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px rgba(43, 1, 0, 0.75);
+    text-align: center;
+    margin: 1rem 0;
+    font-size:2rem;
+    font-weight:400;
+}
+
+
+.wrapper{
+    border: 20px solid rgba(0,0,0,0.23); 
+    border-radius:5px;
+    
+}
+
+.form{
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+    background-color: rgb(244, 244, 244);
+    -webkit-box-shadow: 0px 0px 8.6px 1.4px rgba(0, 0, 0, 0.13);
+            box-shadow: 0px 0px 8.6px 1.4px rgba(0, 0, 0, 0.13);
+    display:inline-block; 
+    width:100%;
+    border-radius:3px;
+    height:100%;
+}
+
+
+
+.inputbox{
+    width:90%;
+    border: 1px solid #c6c6c6;
+    border-radius:3px;
+    height:3rem;
+    margin:1.5rem auto 0 auto;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+    background-image:-webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    position:relative;
+}
+
+.inputbox::before{
+    content:'';
+    border:1px solid #dedede;
+    position:absolute;
+    left:3rem;
+    height: 80%;
+    top:10%;
+}
+
+.user{
+    background-image:url(user.png);
+    background-position: 0.75rem;
+}
+
+.envelope{
+    background-image:url(envelope.png);
+    background-position: 0.625rem;
+}
+
+.lock{
+    background-image:url(lock.png);
+    background-position: 0.75rem;
+}
+
+.location{
+    background-image:url(location.png);
+    background-position: 1rem;
+}
+
+.phone{
+    background-image:url(phone.png);
+    background-position: 1rem;
+}
+
+
+.input{
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1rem;
+    color:#afafaf;
+    border:none; 
+    height:100%;
+    width:100%;
+    float:left;
+    background-color:transparent;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+    padding:0.25rem 0 0.25rem 4rem;
+    background-repeat: no-repeat;
+    text-align: 20px;
+}
+
+input, textarea{
+    outline-color: rgba(127,195,32,1);
+}
+
+
+.inputbox:hover,textarea:hover{
+    border-color: rgba(160,213,60,1);
+}
+
+.message{
+    height:14rem;
+    border: 1px solid #c6c6c6;
+    border-radius:3px;
+    width:90%;
+    background:transparent;
+    background-image:-webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    margin:1rem auto 0 auto;
+    display:block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0.5rem 0.5rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1rem;
+    color:#afafaf;
+    resize:none;
+}
+
+.checkboxcontainer{
+    height:1.5rem;
+    width:90%;
+    margin: 1rem auto 0 auto;
+    position:relative;
+}
+
+.buttoncontainer .checkboxcontainer{
+    width:45%;
+    margin:auto 0;
+}
+
+.termsofuse{
+    display:inline-block;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1rem;
+    color:#afafaf;
+    text-align: center;
+    height:1.5rem;
+    line-height: 1.5rem;
+    max-width:90%;
+    position:absolute;
+    top:0;
+    padding-left:0.5rem;
+}
+
+input[type="checkbox"]{
+    display:inline-block;
+    margin: auto 0;
+    height:1.5rem;
+    width:1.5rem;
+        -webkit-appearance: initial;
+    -moz-appearance: initial;
+    appearance: initial;
+    position: relative;
+    background-image:-webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border: 1px solid #c6c6c6;
+    border-radius:3px;
+}
+
+
+input[type="checkbox"]:checked:after {
+    /* Heres your symbol replacement - this is a tick in Unicode. */
+    content: " ";
+    background-image:-webkit-linear-gradient(90deg, rgba(127, 195, 32, 1) 0%, rgba(173, 219, 84, 1) 100%);
+    
+    /* The following positions my tick in the center, 
+     * but you could just overlay the entire box
+     * with a full after element with a background if you want to */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width:60%;
+    height:60%;
+    border-radius:3px;
+    /*
+     * If you want to fully change the check appearance, use the following:
+     * content: " ";
+     * width: 100%;
+     * height: 100%;
+     * background: blue;
+     * top: 0;
+     * left: 0;
+     */
+}
+
+.buttoncontainer{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    width:90%;
+    height:3.5rem;
+    margin: 1.5rem auto 1rem auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.submitbutton{
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1.25rem;
+    font-weight: 400;
+    line-height:2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px rgba(43, 1, 0, 0.75);
+    background-image:-webkit-linear-gradient(90deg, rgba(127, 195, 32, 1) 0%, rgba(173, 219, 84, 1) 100%);
+    border: 1px solid rgba(59,154,0,1);
+    border-radius:3px;
+    cursor:pointer;
+}
+
+input[type="submit"]:active{
+    -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.5);
+box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.5);
+}
+
+.single{
+    width:100%;
+}
+
+.double{
+    width:40%;
+}
+
+#deny{
+    background-image:-webkit-linear-gradient(90deg, rgba(240, 55, 69, 1) 0%, rgba(245, 94, 111, 1) 100%);
+    border: 1px solid rgba(168,44,54,1);
+    border-radius:3px;
+    outline-color: rgba(168,44,54,1);
+}
+
+#done{
+    background-image:-webkit-linear-gradient(90deg, rgba(172, 209, 131, 1) 0%, rgba(198, 224, 166, 1) 100%);
+    border-color:  #90ca6d;
+}
+
+.logocontainer{
+    margin:0 3rem;
+    width:40%;
+    max-width:500px;
+    text-align:center;
+}
+
+.logo2{
+    opacity:0.35;
+    width:100%;
+    max-width:353px;
+    margin:1rem 0;
+}
+
+@media(max-width:1024px){
+    html{
+        font-size:14px;
+    }
+    
+    main{
+        height:78rem;
+    }
+    
+    .double{
+        width:45%;
+    }
+    
+    .buttoncontainer .checkboxcontainer {
+        width:50%;
+    }
+    
+    .message{
+        height:12rem;
+    }
+    
+    .termsofuse{
+        font-size:0.8rem;
+    }
+    
+    .formcontainer{
+        margin: 0 2.5rem;
+    }
+    
+    .logocontainer{
+        margin: 0 2.5rem;
+    }
+    
+    
+}
+
+@media(max-width:768px){
+    html{
+        font-size:12px;
+    }
+    
+    main{
+        height: 80rem;
+    }
+    
+    .message{
+        height:10rem;
+    }
+}
+
+@media(max-width:768px) and (orientation: portrait){
+    html{
+        font-size:12px;
+    }
+    
+    .logo1{
+        width:85%;
+    }
+    
+    main{
+        height:160rem;
+        align-items:center;
+        margin-bottom:3rem;
+    }
+    
+    .formcontainer{
+        width:80%;
+    }
+    
+    .logocontainer{
+        width:80%;
+    }
+    
+    .termsofuse{
+        font-size: 1rem;
+    }
+}
